@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Odin Library Project</h1>
+    <button class="add-btn" onclick="openForm()">Add a Book</button>
+    <div class="display"></div>
+    <div class="form-popup" id="myForm">
+        <form action="" name="my_form" class="form-container">
+            <h3>Add a new book</h3>
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter the title..." name="title" id="input_id" required>
+            <label for="author"><b>Author</b></label>
+            <input type="text" placeholder="Enter the author..." name="author" id="input_id" required>
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" name="pages" placeholder="Enter the pages..." id="input_id" required>
+            <button type="button" class="btn" onclick="addBookToLibrary()">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
